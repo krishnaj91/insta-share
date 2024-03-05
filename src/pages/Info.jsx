@@ -2,7 +2,7 @@ import React from "react";
 
 const Info = () => {
   return (
-    <div>
+    <div className="flex flex-column align-items-center">
       <h1>complete setup</h1>
       <p>project setup</p>
       <p>routing setup</p>
@@ -12,6 +12,7 @@ const Info = () => {
       <p>primereact</p>
       <p>primeflex</p>
       <p>primeicons</p>
+      <a href="/login">login</a>
     </div>
   );
 };
