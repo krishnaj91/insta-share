@@ -1,0 +1,88 @@
+// Light Theme
+.sidebar-light {
+  background: #ffffff;
+
+  .sidebar-head-bg {
+    background: #efefef;
+  }
+  .sidebar-body {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+  }
+  .sidebar-body-content {
+    cursor: pointer;
+    &:hover {
+      background: #e5e5e5;
+    }
+  }
+}
+
+// Dark Theme
+.sidebar-dark {
+  background: #0a0a0a;
+  .sidebar-head-bg {
+    background: #111111;
+  }
+  .sidebar-body {
+    max-height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #2c2e3e;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+  }
+
+  .sidebar-body-content {
+    cursor: pointer;
+
+    &:hover {
+      background: #000000;
+    }
+  }
+}
+
+// Common Navigation
+.nav-light {
+  background: #ebebeb;
+}
+
+.nav-dark {
+  background: #121212;
+}
+
+// footer
+
+.footer {
+  height: 70px;
+}
+
+.footer-light-bg {
+  background: #ebebeb;
+}
+
+.footer-dark-bg {
+  background: #121212;
+}

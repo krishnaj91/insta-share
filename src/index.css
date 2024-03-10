@@ -1,4 +1,31 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+  margin-bottom: 0;
+}
+
+:root {
+  --primaryColor: #e3437f;
+  --white: #ffffff;
+}
+
+.my-col {
+  color: var(--primaryColor);
+}
+
+.my-bg {
+  background-color: #e3437f;
+}
+
+.my-link {
+  color: #e3437f;
+}
+
+.my-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ganesh{
+  height: 500px;
+  width: 350px;
+  background-size: cover;
 }

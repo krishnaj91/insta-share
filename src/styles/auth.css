@@ -4,5 +4,20 @@
 }
 
 .logo{
-    width: 100px;
+    width: 150px;
 }
+
+.cm-width{
+    width: 500px;
+}
+
+.input-width{
+    width: 350px;
+}
+/* 
+.main{
+    background-image: url('https://cdn.dribbble.com/userupload/2553968/file/original-1c12fff42eb59b778cbaea028a6a7bc7.png?resize=1600x1200');
+    background-size: cover;
+    background-position: center;
+    object-fit:cover
+} */

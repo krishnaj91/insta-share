@@ -1,0 +1,148 @@
+.test-wid {
+  width: 250px;
+}
+
+.demo {
+  min-width: 180px;
+  width: 100%;
+}
+
+.test1 {
+  background-color: #000000; /* Absolute Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test2 {
+  background-color: #0a0a0a; /* Darker Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test3 {
+  background-color: #111111; /* Dark Grayish Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test4 {
+  background-color: #1e1e1e; /* Charcoal Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test5 {
+  background-color: #333333; /* Grayish Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test6 {
+  background-color: #2c2c2c; /* Cool-toned Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test7 {
+  background-color: #1a1a1a; /* Deep Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test8 {
+  background-color: #262626; /* Muted Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test9 {
+  background-color: #1f1f1f; /* Neutral Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test10 {
+  background-color: #121212; /* Rich Black */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test11 {
+  background-color: #eaeaea; /* Light Gray */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test12 {
+  background-color: #f7f7f7; /* Light Gray */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test13 {
+  background-color: #ebebeb; /* Light Gray */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test14 {
+  background-color: #e5e5e5; /* Light Gray */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test15 {
+  background-color: #efefef; /* Light Gray */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test16 {
+  background-color: #fbfbfb; /* White */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test17 {
+  background-color: #f9f9f9; /* White */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test18 {
+  background-color: #f4f4f4; /* White Smoke */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test19 {
+  background-color: #f6f6f6; /* White */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}
+
+.test20 {
+  background-color: #ffffff; /* White */
+  color: #000000; /* Text color */
+  padding: 10px; /* Optional styling */
+  margin-bottom: 10px; /* Optional styling */
+}

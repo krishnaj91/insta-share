@@ -1,5 +1,6 @@
 import Routes from "./routes/Router";
 import "./styles/auth.css";
+import './app.css'
 
 function App() {
   return (

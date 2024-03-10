@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { testApi } from "../redux/actions/testActions";
+import { testApi } from "../../redux/actions/testActions";
 
 const Test = () => {
   const dispatch = useDispatch();
