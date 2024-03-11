@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import App from "./App.jsx";
 import store from "./redux/Store.jsx";
 import "./index.css";
+import "./styles/responsive.scss";
 
 //theme
 import "primereact/resources/themes/lara-light-cyan/theme.css";

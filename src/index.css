@@ -4,7 +4,15 @@
 
 :root {
   --primaryColor: #e3437f;
-  --white: #ffffff;
+  --themeColor: #000000;
+  --themeColorSecondary: #222222;
+}
+
+.my-theme-text{
+  color: var(--themeColor);
+}
+.my-theme-secondary{
+  color: var(--themeColor);
 }
 
 .my-col {

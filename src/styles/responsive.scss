@@ -1,0 +1,42 @@
+/* Main Heading */
+.my-heading {
+  font-size: 36px; /* Desktop */
+}
+
+/* Sub Heading */
+.my-para {
+  font-size: 18px; /* Desktop */
+}
+
+/* Media query for tablets (landscape) */
+@media only screen and (max-width: 1024px) {
+  .my-heading {
+    font-size: 30px; /* Tablet (landscape) */
+  }
+
+  .my-para {
+    font-size: 16px; /* Tablet (landscape) */
+  }
+}
+
+/* Media query for tablets (portrait) */
+@media only screen and (max-width: 768px) {
+  .my-heading {
+    font-size: 24px; /* Tablet (portrait) */
+  }
+
+  .my-para {
+    font-size: 14px; /* Tablet (portrait) */
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .my-heading {
+    font-size: 20px; /* Mobile */
+  }
+
+  .my-para {
+    font-size: 12px; /* Mobile */
+  }
+}

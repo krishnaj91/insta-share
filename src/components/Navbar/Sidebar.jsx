@@ -17,7 +17,7 @@ const Sidebar = () => {
       }
     >
       <div
-        className={`nav-h flex align-items-center sidebar-head-bg ${
+        className={`nav-h flex align-items-center gap-3 sidebar-head-bg ${
           collapse && "justify-content-center"
         }`}
       >

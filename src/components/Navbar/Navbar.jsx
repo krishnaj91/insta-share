@@ -5,6 +5,7 @@ import {
   collapseSidebar,
   switchTheme,
 } from "../../redux/actions/layoutActions";
+import { InputText } from "primereact/inputtext";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -27,6 +28,12 @@ const Navbar = () => {
               )}
             </div>
             <div>
+              <span className="p-input-icon-left">
+                <i className="pi pi-search" />
+                <InputText placeholder="Search" className="p-inputtext-sm"/>
+              </span>
+            </div>
+            <div>
               <InputSwitch
                 checked={isDark}
                 onChange={() => dispatch(switchTheme(!isDark))}
@@ -40,7 +47,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="sm:hidden block h-full">
+        <div className="md:hidden block h-full">
           <div className="flex justify-content-between align-items-center h-full px-3">
             <div className="font-semibold my-col text-3xl">Insta Share</div>
             <div>
