@@ -3,11 +3,43 @@
   max-width: 500px;
 }
 
+.status-container {
+  // width: 600px;
+  overflow-x: scroll;
+  display: flex;
+  gap: 0.5rem;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  margin: 1rem;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .status-profile-pic-container {
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 4px;
+    background: linear-gradient(to right, red, blue, green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .status-profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px white;
+    cursor: pointer;
+  }
+}
+
 .post-img {
   background-size: cover;
   width: 500px;
-  // aspect-ratio: 3/4;
-  // object-fit: cover;
 }
 
 .profile-card-pic {

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import MainLayout from "../components/Layout/MainLayout";
 import { Image } from "primereact/image";
 import { Button } from "primereact/button";
 import PostsData from "../assets/__mockData__/PostsData.json"
+import StatusData from "../assets/__mockData__/StatusData.json"
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -12,11 +13,39 @@ const Home = () => {
       setLoading(false);
     }, 1500)
   };
+
+  const containerRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
+        left: -150, // adjust the value as needed for scrolling distance
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
+        left: 150, // adjust the value as needed for scrolling distance
+        behavior: 'smooth',
+      });
+    }
+  };
+  
   return (
     <MainLayout>
+      <div className="flex align-items-center">
+        <i className="pi pi-angle-left text-4xl cursor-pointer  hidden sm:block" onClick={scrollLeft} />
+        <div className="status-container" ref={containerRef}>{StatusData.map((status) => (
+          <div className="status-profile-pic-container" key={status.id}><img className="status-profile-pic" src={status.userPic} /></div>
+        ))}</div>
+        <i className="pi pi-angle-right text-4xl cursor-pointer  hidden sm:block" onClick={scrollRight}/>
+      </div>
       <div className="flex flex-column align-items-center justify-content-center gap-4">
         {PostsData.map((item) => (
-          <div className="post-card border-bottom-1 border-200">
+          <div className="post-card border-bottom-1 border-200" key={item.id}>
             <div className="flex align-items-center justify-content-between m-3">
               <div className="flex align-items-center gap-3">
                 <img
@@ -125,7 +154,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div></div>
     </MainLayout>
   );
 };

@@ -1,0 +1,107 @@
+[
+    {
+        "id": "8j3F9dE2k5",
+        "username": "Emily_Johnson",
+        "name": "Emily Johnson",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+        "id": "h6GtR1pQs",
+        "username": "Alexander_Smith",
+        "name": "Alexander Smith",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+        "id": "u9PwQ5sEr",
+        "username": "Sophia_Brown",
+        "name": "Sophia Brown",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+        "id": "k2NfJ3dRp",
+        "username": "William_Miller",
+        "name": "William Miller",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+        "id": "z8KqV1oNw",
+        "username": "Isabella_Wilson",
+        "name": "Isabella Wilson",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+        "id": "e7HmX4uGq",
+        "username": "James_Brown",
+        "name": "James Brown",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+        "id": "f4TlS9pWq",
+        "username": "Olivia_Taylor",
+        "name": "Olivia Taylor",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+        "id": "m3ZpQ9wGk",
+        "username": "Michael_Davis",
+        "name": "Michael Davis",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+        "id": "i9OpW3jRs",
+        "username": "Emma_Wilson",
+        "name": "Emma Wilson",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+        "id": "n2UqA5rPw",
+        "username": "Liam_Johnson",
+        "name": "Liam Johnson",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/10.jpg"
+    },
+    {
+        "id": "s7HjK4dFs",
+        "username": "Ava_Martinez",
+        "name": "Ava Martinez",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    {
+        "id": "l2RtQ9sZp",
+        "username": "Noah_Garcia",
+        "name": "Noah Garcia",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+        "id": "q8IuW3pTr",
+        "username": "Sophia_Lopez",
+        "name": "Sophia Lopez",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/13.jpg"
+    },
+    {
+        "id": "w3ErT8jPq",
+        "username": "Ethan_Young",
+        "name": "Ethan Young",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/men/14.jpg"
+    },
+    {
+        "id": "a9QsR4fHj",
+        "username": "Olivia_White",
+        "name": "Olivia White",
+        "statusPic": "https://source.unsplash.com/featured/?nature",
+        "userPic": "https://randomuser.me/api/portraits/women/15.jpg"
+    }
+]

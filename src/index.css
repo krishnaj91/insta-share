@@ -6,12 +6,13 @@
   --primaryColor: #e3437f;
   --themeColor: #000000;
   --themeColorSecondary: #222222;
+  --buttonColor: #e3437f;
 }
 
-.my-theme-text{
+.my-theme-text {
   color: var(--themeColor);
 }
-.my-theme-secondary{
+.my-theme-secondary {
   color: var(--themeColor);
 }
 
@@ -20,7 +21,7 @@
 }
 
 .my-bg {
-  background-color: #e3437f;
+  background-color: var(--buttonColor);
 }
 
 .my-link {
@@ -32,7 +33,7 @@
   cursor: pointer;
 }
 
-.ganesh{
+.ganesh {
   height: 500px;
   width: 350px;
   background-size: cover;

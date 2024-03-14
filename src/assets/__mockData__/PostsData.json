@@ -1,302 +1,362 @@
 [
     {
-        "id": 1,
+        "id": "8j3F9dE2k5",
         "post": "https://source.unsplash.com/featured/?nature",
         "alt": "Nature",
-        "username": "Emily Johnson",
+        "name": "Emily Johnson",
+        "username": "Emily_Johnson",
         "userpic": "https://randomuser.me/api/portraits/women/1.jpg",
         "likeCount": 100,
         "totalComments": 20,
-        "description": "Enjoying the beauty of nature."
+        "description": "Enjoying the beauty of nature.",
+        "private": false
     },
     {
-        "id": 2,
+        "id": "h6GtR1pQs",
         "post": "https://source.unsplash.com/featured/?landscape",
         "alt": "Landscape",
-        "username": "Alexander Smith",
+        "name": "Alexander Smith",
+        "username": "Alexander_Smith",
         "userpic": "https://randomuser.me/api/portraits/men/2.jpg",
         "likeCount": 120,
         "totalComments": 15,
-        "description": "Capturing the breathtaking views."
+        "description": "Capturing the breathtaking views.",
+        "private": true
     },
     {
-        "id": 3,
+        "id": "u9PwQ5sEr",
         "post": "https://source.unsplash.com/featured/?forest",
         "alt": "Forest",
-        "username": "Sophia Brown",
+        "name": "Sophia Brown",
+        "username": "Sophia_Brown",
         "userpic": "https://randomuser.me/api/portraits/women/3.jpg",
         "likeCount": 80,
         "totalComments": 25,
-        "description": "Lost in the tranquility of the woods."
+        "description": "Lost in the tranquility of the woods.",
+        "private": false
     },
     {
-        "id": 4,
+        "id": "k2NfJ3dRp",
         "post": "https://source.unsplash.com/featured/?mountains",
         "alt": "Mountains",
-        "username": "William Miller",
+        "name": "William Miller",
+        "username": "William_Miller",
         "userpic": "https://randomuser.me/api/portraits/men/4.jpg",
         "likeCount": 150,
         "totalComments": 30,
-        "description": "Adventuring through majestic peaks."
+        "description": "Adventuring through majestic peaks.",
+        "private": false
     },
     {
-        "id": 5,
+        "id": "z8KqV1oNw",
         "post": "https://source.unsplash.com/featured/?waterfall",
         "alt": "Waterfall",
-        "username": "Isabella Wilson",
+        "name": "Isabella Wilson",
+        "username": "Isabella_Wilson",
         "userpic": "https://randomuser.me/api/portraits/women/5.jpg",
         "likeCount": 90,
         "totalComments": 18,
-        "description": "Mesmerized by the cascade of water."
+        "description": "Mesmerized by the cascade of water.",
+        "private": true
     },
     {
-        "id": 6,
+        "id": "e7HmX4uGq",
         "post": "https://source.unsplash.com/featured/?beach",
         "alt": "Beach",
-        "username": "James Brown",
+        "name": "James Brown",
+        "username": "James_Brown",
         "userpic": "https://randomuser.me/api/portraits/men/6.jpg",
         "likeCount": 110,
         "totalComments": 22,
-        "description": "Relaxing by the sandy shores."
+        "description": "Relaxing by the sandy shores.",
+        "private": false
     },
     {
-        "id": 7,
+        "id": "f4TlS9pWq",
         "post": "https://source.unsplash.com/featured/?sunset",
         "alt": "Sunset",
-        "username": "Olivia Taylor",
+        "name": "Olivia Taylor",
+        "username": "Olivia_Taylor",
         "userpic": "https://randomuser.me/api/portraits/women/7.jpg",
         "likeCount": 130,
         "totalComments": 28,
-        "description": "Chasing the last rays of sunlight."
+        "description": "Chasing the last rays of sunlight.",
+        "private": false
     },
     {
-        "id": 8,
+        "id": "m3ZpQ9wGk",
         "post": "https://source.unsplash.com/featured/?sunrise",
         "alt": "Sunrise",
-        "username": "Michael Davis",
+        "name": "Michael Davis",
+        "username": "Michael_Davis",
         "userpic": "https://randomuser.me/api/portraits/men/8.jpg",
         "likeCount": 95,
         "totalComments": 12,
-        "description": "Witnessing the birth of a new day."
+        "description": "Witnessing the birth of a new day.",
+        "private": true
     },
     {
-        "id": 9,
+        "id": "i9OpW3jRs",
         "post": "https://source.unsplash.com/featured/?trees",
         "alt": "Trees",
-        "username": "Emma Wilson",
+        "name": "Emma Wilson",
+        "username": "Emma_Wilson",
         "userpic": "https://randomuser.me/api/portraits/women/9.jpg",
         "likeCount": 140,
         "totalComments": 35,
-        "description": "Finding peace among the tall trees."
+        "description": "Finding peace among the tall trees.",
+        "private": false
     },
     {
-        "id": 10,
+        "id": "n2UqA5rPw",
         "post": "https://source.unsplash.com/featured/?flowers",
         "alt": "Flowers",
-        "username": "Liam Johnson",
+        "name": "Liam Johnson",
+        "username": "Liam_Johnson",
         "userpic": "https://randomuser.me/api/portraits/men/10.jpg",
         "likeCount": 75,
         "totalComments": 10,
-        "description": "Admiring the beauty of blooming flowers."
+        "description": "Admiring the beauty of blooming flowers.",
+        "private": false
     },
     {
-        "id": 11,
+        "id": "s7HjK4dFs",
         "post": "https://source.unsplash.com/featured/?clouds",
         "alt": "Clouds",
-        "username": "Ava Martinez",
+        "name": "Ava Martinez",
+        "username": "Ava_Martinez",
         "userpic": "https://randomuser.me/api/portraits/women/11.jpg",
         "likeCount": 105,
         "totalComments": 16,
-        "description": "Watching the clouds drift by."
+        "description": "Watching the clouds drift by.",
+        "private": false
     },
     {
-        "id": 12,
+        "id": "l2RtQ9sZp",
         "post": "https://source.unsplash.com/featured/?birds",
         "alt": "Birds",
-        "username": "Noah Garcia",
+        "name": "Noah Garcia",
+        "username": "Noah_Garcia",
         "userpic": "https://randomuser.me/api/portraits/men/12.jpg",
         "likeCount": 115,
         "totalComments": 27,
-        "description": "Marveling at the beauty of birds in flight."
+        "description": "Marveling at the beauty of birds in flight.",
+        "private": true
     },
     {
-        "id": 13,
+        "id": "q8IuW3pTr",
         "post": "https://source.unsplash.com/featured/?stars",
         "alt": "Stars",
-        "username": "Sophia Lopez",
+        "name": "Sophia Lopez",
+        "username": "Sophia_Lopez",
         "userpic": "https://randomuser.me/api/portraits/women/13.jpg",
         "likeCount": 95,
         "totalComments": 19,
-        "description": "Gazing up at the starry night sky."
+        "description": "Gazing up at the starry night sky.",
+        "private": false
     },
     {
-        "id": 14,
+        "id": "w3ErT8jPq",
         "post": "https://source.unsplash.com/featured/?city",
         "alt": "City",
-        "username": "Ethan Young",
+        "name": "Ethan Young",
+        "username": "Ethan_Young",
         "userpic": "https://randomuser.me/api/portraits/men/14.jpg",
         "likeCount": 125,
         "totalComments": 23,
-        "description": "Exploring the bustling streets of the city."
+        "description": "Exploring the bustling streets of the city.",
+        "private": true
     },
     {
-        "id": 15,
+        "id": "a9QsR4fHj",
         "post": "https://source.unsplash.com/featured/?snow",
         "alt": "Snow",
-        "username": "Olivia White",
+        "name": "Olivia White",
+        "username": "Olivia_White",
         "userpic": "https://randomuser.me/api/portraits/women/15.jpg",
         "likeCount": 85,
         "totalComments": 14,
-        "description": "Playing in the freshly fallen snow."
+        "description": "Playing in the freshly fallen snow.",
+        "private": false
     },
     {
-        "id": 16,
+        "id": "f6YrE2hTk",
         "post": "https://source.unsplash.com/featured/?fireworks",
         "alt": "Fireworks",
-        "username": "William Thompson",
+        "name": "William Thompson",
+        "username": "William_Thompson",
         "userpic": "https://randomuser.me/api/portraits/men/16.jpg",
         "likeCount": 135,
         "totalComments": 31,
-        "description": "Admiring the colorful bursts of fireworks."
+        "description": "Admiring the colorful bursts of fireworks.",
+        "private": false
     },
     {
-        "id": 17,
+        "id": "z4FyG7jEm",
         "post": "https://source.unsplash.com/featured/?rain",
         "alt": "Rain",
-        "username": "Amelia Harris",
+        "name": "Amelia Harris",
+        "username": "Amelia_Harris",
         "userpic": "https://randomuser.me/api/portraits/women/17.jpg",
         "likeCount": 100,
         "totalComments": 25,
-        "description": "Listening to the soothing sound of rain."
+        "description": "Listening to the soothing sound of rain.",
+        "private": true
     },
     {
-        "id": 18,
+        "id": "x8RwT3uIq",
         "post": "https://source.unsplash.com/featured/?moon",
         "alt": "Moon",
-        "username": "James King",
+        "name": "James King",
+        "username": "James_King",
         "userpic": "https://randomuser.me/api/portraits/men/18.jpg",
         "likeCount": 145,
         "totalComments": 29,
-        "description": "Admiring the moonlit night."
+        "description": "Admiring the moonlit night.",
+        "private": false
     },
     {
-        "id": 19,
+        "id": "m5PtW9rKs",
         "post": "https://source.unsplash.com/featured/?desert",
         "alt": "Desert",
-        "username": "Emma Garcia",
+        "name": "Emma Garcia",
+        "username": "Emma_Garcia",
         "userpic": "https://randomuser.me/api/portraits/women/19.jpg",
         "likeCount": 120,
         "totalComments": 18,
-        "description": "Exploring the vastness of the desert."
+        "description": "Exploring the vastness of the desert.",
+        "private": true
     },
     {
-        "id": 20,
+        "id": "i2OsA4wEr",
         "post": "https://source.unsplash.com/featured/?rainbow",
         "alt": "Rainbow",
-        "username": "Michael Moore",
+        "name": "Michael Moore",
+        "username": "Michael_Moore",
         "userpic": "https://randomuser.me/api/portraits/men/20.jpg",
         "likeCount": 110,
         "totalComments": 24,
-        "description": "Chasing rainbows after the rain."
+        "description": "Chasing rainbows after the rain.",
+        "private": false
     },
-    { 
-        "id": 21,
-        "post": "https://source.unsplash.com/featured/?countryside", 
-        "alt": "Countryside", 
-        "username": "Sophia Rodriguez", 
+    {
+        "id": "d9RtF7wYp",
+        "post": "https://source.unsplash.com/featured/?countryside",
+        "alt": "Countryside",
+        "name": "Sophia Rodriguez",
+        "username": "Sophia_Rodriguez",
         "userpic": "https://randomuser.me/api/portraits/women/21.jpg",
         "likeCount": 95,
         "totalComments": 12,
-        "description": "Enjoying the peaceful countryside."
-      },
-      { 
-        "id": 22,
-        "post": "https://source.unsplash.com/featured/?architecture", 
-        "alt": "Architecture", 
-        "username": "Liam Martinez", 
+        "description": "Enjoying the peaceful countryside.",
+        "private": true
+    },
+    {
+        "id": "o8TqS6uJi",
+        "post": "https://source.unsplash.com/featured/?architecture",
+        "alt": "Architecture",
+        "name": "Liam Martinez",
+        "username": "Liam_Martinez",
         "userpic": "https://randomuser.me/api/portraits/men/22.jpg",
         "likeCount": 110,
         "totalComments": 17,
-        "description": "Admiring the beauty of architectural marvels."
-      },
-      { 
-        "id": 23,
-        "post": "https://source.unsplash.com/featured/?ocean", 
-        "alt": "Ocean", 
-        "username": "Ava Clark", 
+        "description": "Admiring the beauty of architectural marvels.",
+        "private": false
+    },
+    {
+        "id": "w2EnP5sJr",
+        "post": "https://source.unsplash.com/featured/?ocean",
+        "alt": "Ocean",
+        "name": "Ava Clark",
+        "username": "Ava_Clark",
         "userpic": "https://randomuser.me/api/portraits/women/23.jpg",
         "likeCount": 125,
         "totalComments": 22,
-        "description": "Exploring the depths of the ocean."
-      },
-      { 
-        "id": 24,
-        "post": "https://source.unsplash.com/featured/?pets", 
-        "alt": "Pets", 
-        "username": "Ethan Lee", 
+        "description": "Exploring the depths of the ocean.",
+        "private": true
+    },
+    {
+        "id": "p5QtR8fWs",
+        "post": "https://source.unsplash.com/featured/?pets",
+        "alt": "Pets",
+        "name": "Ethan Lee",
+        "username": "Ethan_Lee",
         "userpic": "https://randomuser.me/api/portraits/men/24.jpg",
         "likeCount": 105,
         "totalComments": 14,
-        "description": "Cuddling with adorable pets."
-      },
-      { 
-        "id": 25,
-        "post": "https://source.unsplash.com/featured/?road", 
-        "alt": "Road", 
-        "username": "Olivia Scott", 
+        "description": "Cuddling with adorable pets.",
+        "private": false
+    },
+    {
+        "id": "t6JyH9kLs",
+        "post": "https://source.unsplash.com/featured/?road",
+        "alt": "Road",
+        "name": "Olivia Scott",
+        "username": "Olivia_Scott",
         "userpic": "https://randomuser.me/api/portraits/women/25.jpg",
         "likeCount": 130,
         "totalComments": 20,
-        "description": "Embarking on a journey down the open road."
-      },
-      { 
-        "id": 26,
-        "post": "https://source.unsplash.com/featured/?night", 
-        "alt": "Night", 
-        "username": "William Hill", 
+        "description": "Embarking on a journey down the open road.",
+        "private": true
+    },
+    {
+        "id": "f7YuT2jRm",
+        "post": "https://source.unsplash.com/featured/?night",
+        "alt": "Night",
+        "name": "William Hill",
+        "username": "William_Hill",
         "userpic": "https://randomuser.me/api/portraits/men/26.jpg",
         "likeCount": 115,
         "totalComments": 18,
-        "description": "Exploring the mysteries of the night."
-      },
-      { 
-        "id": 27,
-        "post": "https://source.unsplash.com/featured/?book", 
-        "alt": "Book", 
-        "username": "Amelia Adams", 
+        "description": "Exploring the mysteries of the night.",
+        "private": false
+    },
+    {
+        "id": "g2FtW4jAm",
+        "post": "https://source.unsplash.com/featured/?book",
+        "alt": "Book",
+        "name": "Amelia Adams",
+        "username": "Amelia_Adams",
         "userpic": "https://randomuser.me/api/portraits/women/27.jpg",
         "likeCount": 140,
         "totalComments": 25,
-        "description": "Getting lost in the pages of a good book."
-      },
-      { 
-        "id": 28,
-        "post": "https://source.unsplash.com/featured/?music", 
-        "alt": "Music", 
-        "username": "James Carter", 
+        "description": "Getting lost in the pages of a good book.",
+        "private": true
+    },
+    {
+        "id": "o9PsQ5rNm",
+        "post": "https://source.unsplash.com/featured/?music",
+        "alt": "Music",
+        "name": "James Carter",
+        "username": "James_Carter",
         "userpic": "https://randomuser.me/api/portraits/men/28.jpg",
         "likeCount": 120,
         "totalComments": 16,
-        "description": "Listening to the soulful melodies of music."
-      },
-      { 
-        "id": 29,
-        "post": "https://source.unsplash.com/featured/?garden", 
-        "alt": "Garden", 
-        "username": "Emma Baker", 
+        "description": "Listening to the soulful melodies of music.",
+        "private": false
+    },
+    {
+        "id": "t3RuQ8sJw",
+        "post": "https://source.unsplash.com/featured/?garden",
+        "alt": "Garden",
+        "name": "Emma Baker",
+        "username": "Emma_Baker",
         "userpic": "https://randomuser.me/api/portraits/women/29.jpg",
         "likeCount": 135,
         "totalComments": 23,
-        "description": "Strolling through vibrant garden paths."
-      },
-      { 
-        "id": 30,
-        "post": "https://source.unsplash.com/featured/?vintage", 
-        "alt": "Vintage", 
-        "username": "Michael Cook", 
+        "description": "Strolling through vibrant garden paths.",
+        "private": false
+    },
+    {
+        "id": "i7HuM9kWo",
+        "post": "https://source.unsplash.com/featured/?vintage",
+        "alt": "Vintage",
+        "name": "Michael Cook",
+        "username": "Michael_Cook",
         "userpic": "https://randomuser.me/api/portraits/men/30.jpg",
         "likeCount": 100,
         "totalComments": 19,
-        "description": "Embracing the charm of vintage aesthetics."
-      }
+        "description": "Embracing the charm of vintage aesthetics.",
+        "private": true
+    }
 ]

@@ -5,6 +5,7 @@ import "../../styles/layout.scss";
 import "../../styles/pages.scss";
 import { useSelector } from "react-redux";
 import Footer from "../Navbar/Footer";
+import AdminWheel from "./AdminWheel";
 
 const MainLayout = ({ children }) => {
   const { collapse, isDark } = useSelector((state) => state.layout);
@@ -46,6 +47,7 @@ const MainLayout = ({ children }) => {
           <Footer />
         </div>
       </div>
+      <AdminWheel/>
     </div>
   );
 };

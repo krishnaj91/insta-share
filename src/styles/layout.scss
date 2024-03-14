@@ -30,6 +30,17 @@
   min-height: calc(100vh - 60px);
   max-height: calc(100vh - 60px);
   overflow-y: auto;
+  // &::-webkit-scrollbar {
+  //   width: 10px;
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: #2c2e3e;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   background: #888;
+  //   border-radius: 5px;
+  // }
 }
 
 .layout-light {
@@ -57,6 +68,7 @@
     min-height: calc(100vh - 130px);
     max-height: calc(100vh - 130px);
     overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -64,4 +76,13 @@
   .sidebar-logo {
     width: 40px;
   }
+}
+
+.admin-wheel {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  background-color: rgb(136, 128, 128);
+  border-radius: 10px;
+  cursor: pointer;
 }
