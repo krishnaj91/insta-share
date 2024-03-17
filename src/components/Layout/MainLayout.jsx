@@ -20,9 +20,9 @@ const MainLayout = ({ children }) => {
  
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--primaryColor', isDark ? '#ffffff' : '#000000');
-    root.style.setProperty('--themeColor', isDark ? "#ffffff" : "#000000");
-    root.style.setProperty('--themeColorSecondary', isDark ? "#F5F5F5" : "#222222");
+    // root.style.setProperty('--primaryColor', isDark ? '#ffffff' : '#000000');
+    root.style.setProperty('--theme-text-color', isDark ? "#ffffff" : "#000000");
+    root.style.setProperty('--theme-text-secondary-color', isDark ? "#F5F5F5" : "#222222");
   }, [isDark]);
 
   return (
@@ -41,7 +41,7 @@ const MainLayout = ({ children }) => {
           className={`${isDark ? "layout-dark" : "layout-light"
             } layout-content`}
         >
-          <div className="">{children}</div>
+          <div>{children}</div>
         </div>
         <div className="md:hidden block">
           <Footer />

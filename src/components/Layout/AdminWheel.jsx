@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import {
   collapseSidebar,
+  homeProfilePicSize,
+  primeReactSizes,
   switchTheme,
 } from "../../redux/actions/layoutActions";
 import { Button } from "primereact/button";
 
 const AdminWheel = () => {
   const dispatch = useDispatch();
-  const { isDark } = useSelector((state) => state.layout);
+  const { isDark, size } = useSelector((state) => state.layout);
   const [visible, setVisible] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const colors = [
     { name: "Red", hexCode: "#FF5E5E" },
     { name: "Blue", hexCode: "#5E97FF" },
@@ -24,6 +28,17 @@ const AdminWheel = () => {
     { name: "Pink", hexCode: "#FF5EB0" },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handleSidebarOpen = () => {
     setVisible(true);
   };
@@ -35,9 +50,61 @@ const AdminWheel = () => {
   const handleColor = (color) => {
     const root = document.documentElement;
     root.style.setProperty("--primaryColor", color);
-    root.style.setProperty("--themeColor", color);
-    root.style.setProperty("--themeColorSecondary", color);
-    root.style.setProperty("--buttonColor", color);
+    // root.style.setProperty("--themeColor", color);
+    // root.style.setProperty("--themeColorSecondary", color);
+    // root.style.setProperty("--buttonColor", color);
+  };
+
+  const handleSmallText = () => {
+    const root = document.documentElement;
+    root.style.setProperty("--status-size", "60px");
+    const sidebarTextSize =
+      screenWidth <= 768
+        ? "16px"
+        : screenWidth > 769 && screenWidth < 1024
+        ? "18px"
+        : "22px";
+    root.style.setProperty("--sidebar-text", `calc(${sidebarTextSize} - 4px)`);
+    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} - 2px)`);
+    root.style.setProperty("--subheading-size", `calc(${sidebarTextSize} - 4px)`);
+    root.style.setProperty("--paragraph-size", `calc(${sidebarTextSize} - 8px)`);
+    dispatch(primeReactSizes("small"));
+    dispatch(homeProfilePicSize("40px"));
+  };
+
+  const handleNormalText = () => {
+    const root = document.documentElement;
+    root.style.setProperty("--status-size", "70px");
+    const sidebarTextSize =
+      screenWidth <= 768
+        ? "16px"
+        : screenWidth > 769 && screenWidth < 1024
+        ? "18px"
+        : "22px";
+    root.style.setProperty("--sidebar-text", sidebarTextSize);
+    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} + 2px)`);
+    root.style.setProperty("--subheading-size", sidebarTextSize);
+    root.style.setProperty("--paragraph-size", `calc(${sidebarTextSize} - 4px)`);
+    dispatch(primeReactSizes("normal"));
+    dispatch(homeProfilePicSize("45px"));
+  };
+
+  const handleLargeText = () => {
+    const root = document.documentElement;
+    root.style.setProperty("--subheading-size", "16px");
+    root.style.setProperty("--status-size", "80px");
+    const sidebarTextSize =
+      screenWidth <= 768
+        ? "16px"
+        : screenWidth > 769 && screenWidth < 1024
+        ? "18px"
+        : "22px";
+    root.style.setProperty("--sidebar-text", `calc(${sidebarTextSize} + 4px)`);
+    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} + 6px)`);
+    root.style.setProperty("--subheading-size", `calc(${sidebarTextSize} + 4px)`);
+    root.style.setProperty("--paragraph-size", sidebarTextSize);
+    dispatch(primeReactSizes("large"));
+    dispatch(homeProfilePicSize("50px"));
   };
 
   return (
@@ -56,20 +123,21 @@ const AdminWheel = () => {
             : " surface-200 text-800 md:w-4 sm:w-6"
         }
       >
+        <h1>{screenWidth}</h1>
         <div className="mb-3">
           <div className="text-3xl font-bold mb-2">Sidebar</div>
           <div className="flex gap-4">
             <Button
               onClick={() => dispatch(collapseSidebar(false))}
-              size="small"
-              className="my-bg border-none"
+              size={size}
+              className="my-btn"
             >
               ON
             </Button>
             <Button
               onClick={() => dispatch(collapseSidebar(true))}
-              size="small"
-              className="my-bg border-none"
+              size={size}
+              className="my-btn"
             >
               OFF
             </Button>
@@ -81,15 +149,15 @@ const AdminWheel = () => {
           <div className="flex gap-4">
             <Button
               onClick={() => dispatch(switchTheme(false))}
-              size="small"
-              className="my-bg border-none"
+              size={size}
+              className="my-btn"
             >
               LIGHT
             </Button>
             <Button
               onClick={() => dispatch(switchTheme(true))}
-              size="small"
-              className="my-bg border-none"
+              size={size}
+              className="my-btn"
             >
               DARK
             </Button>
@@ -105,6 +173,7 @@ const AdminWheel = () => {
                 onClick={() => handleColor(color.hexCode)}
                 style={{ background: color.hexCode }}
                 className="border-none"
+                size={size}
               >
                 {color.name}
               </Button>
@@ -114,7 +183,26 @@ const AdminWheel = () => {
 
         <div className="mb-3">
           <div className="text-3xl font-bold mb-2">SIZE</div>
-          <div>Comming Soon ...</div>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              label="SMALL"
+              size={size}
+              onClick={handleSmallText}
+              className="my-btn"
+            />
+            <Button
+              label="NORMAL"
+              size={size}
+              onClick={handleNormalText}
+              className="my-btn"
+            />
+            <Button
+              label="LARGE"
+              size={size}
+              onClick={handleLargeText}
+              className="my-btn"
+            />
+          </div>
         </div>
       </Sidebar>
     </div>

@@ -8,31 +8,45 @@ import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const { isDark, collapse } = useSelector((state) => state.layout);
+  const { isDark, collapse, postProfileSize } = useSelector(
+    (state) => state.layout
+  );
 
   return (
     <div
       className={
-        isDark ? "sidebar-dark max-h-screen overflow-y-auto" : "sidebar-light"
+        isDark
+          ? "sidebar-dark max-h-screen overflow-y-auto tes"
+          : "sidebar-light sidebar-text"
       }
     >
       <div
-        className={`nav-h flex align-items-center gap-3 sidebar-head-bg ${
+        className={`nav-h flex align-items-center px-1 gap-2 sidebar-head-bg ${
           collapse && "justify-content-center"
         }`}
       >
         <div>
           <img
             src={isDark ? LogoDark : LogoLight}
-            className="sidebar-logo cursor-pointer"
+            className="cursor-pointer hidden lg:block"
             alt="logo"
+            style={{ width: postProfileSize }}
             onClick={() => navigate("/home")}
           />
         </div>
-        {!collapse && (
-          <div className="font-semibold my-col lg:text-xl md:text-sm">
-            Insta Share
+        {collapse && (
+          <div>
+            <img
+              src={isDark ? LogoDark : LogoLight}
+              className="cursor-pointer lg:hidden md:block"
+              alt="logo"
+              style={{ width: postProfileSize }}
+              onClick={() => navigate("/home")}
+            />
           </div>
+        )}
+        {!collapse && (
+          <div className="font-semibold my-col pl-1">Insta Share</div>
         )}
       </div>
       <div className="sidebar-body">
@@ -45,12 +59,10 @@ const Sidebar = () => {
             onClick={() => navigate(item.path)}
           >
             <div>
-              <i className={`${item.icon} lg:text-xl md:text-sm my-col`} />
+              <i className={`${item.icon} my-col sidebar-text`} />
             </div>
             {!collapse && (
-              <div className="font-semibold my-col lg:text-xl md:text-sm">
-                {item.name}
-              </div>
+              <div className="font-semibold my-col">{item.name}</div>
             )}
           </div>
         ))}

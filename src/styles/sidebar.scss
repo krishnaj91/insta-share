@@ -8,6 +8,7 @@
   .sidebar-body {
     max-height: calc(100vh - 60px);
     overflow-y: auto;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -20,6 +21,10 @@
     &::-webkit-scrollbar-thumb {
       background: #888;
       border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
   .sidebar-body-content {
@@ -40,6 +45,7 @@
     max-height: calc(100vh - 60px);
     min-height: calc(100vh - 60px);
     overflow-y: auto;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -52,6 +58,10 @@
     &::-webkit-scrollbar-thumb {
       background: #888;
       border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 

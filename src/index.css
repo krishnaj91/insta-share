@@ -4,16 +4,59 @@
 
 :root {
   --primaryColor: #e3437f;
-  --themeColor: #000000;
-  --themeColorSecondary: #222222;
-  --buttonColor: #e3437f;
+
+  --theme-text-color: #000000;
+  --theme-text-secondary-color: #222222;
+
+  --main-font-size: 1.375rem; /* 22px */
+  --subheading-size: 1.25rem; /* 20px */
+  --paragraph-size: 1.0625rem; /* 17px */
+  --sidebar-text: 24px;
+
+  --status-size: 70px;
+}
+/* Media queries for small devices (phones) */
+@media screen and (max-width: 576px) {
+  :root {
+    /* Adjust font sizes for small devices */
+    --main-font-size: 1.25rem; /* 20px */
+    --subheading-size: 1.125rem; /* 18px */
+    --paragraph-size: 14px; /* 16px */
+    --sidebar-text: 16px;
+  }
 }
 
-.my-theme-text {
-  color: var(--themeColor);
+/* Media queries for medium devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  :root {
+    /* Adjust font sizes for medium devices */
+    --main-font-size: 1.125rem; /* 20px */
+    --subheading-size: 1.125rem; /* 18px */
+    --paragraph-size: 14px; /* 15px */
+    --sidebar-text: 16px;
+  }
 }
-.my-theme-secondary {
-  color: var(--themeColor);
+
+/* Media queries for large devices (desktops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    /* Adjust font sizes for large devices */
+    --main-font-size: 22px; /* 20px */
+    --subheading-size: 20px; /* 18px */
+    --paragraph-size: 16px; /* 16px */
+    --sidebar-text: 18px;
+  }
+}
+
+/* Media queries for extra-large devices (large screens) */
+@media screen and (min-width: 1025px) {
+  :root {
+    /* Adjust font sizes for extra-large devices */
+    --main-font-size: 1.5rem; /* 24px */
+    --subheading-size: 1.375rem; /* 22px */
+    --paragraph-size: 18px; /* 19px */
+    --sidebar-text: 22px;
+  }
 }
 
 .my-col {
@@ -21,16 +64,45 @@
 }
 
 .my-bg {
-  background-color: var(--buttonColor);
+  background-color: var(--primaryColor);
+}
+
+.sidebar-text {
+  font-size: var(--sidebar-text);
+}
+
+.main-text {
+  font-size: var(--main-font-size);
+}
+
+.sub-text {
+  font-size: var(--subheading-size);
+}
+
+.para-text {
+  font-size: var(--paragraph-size);
+}
+
+.my-theme-text {
+  color: var(--theme-text-color);
+}
+
+.my-theme-secondary {
+  color: var(--theme-text-secondary-color);
 }
 
 .my-link {
-  color: #e3437f;
+  color: var(--primaryColor);
 }
 
 .my-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.my-btn {
+  background-color: var(--primaryColor);
+  border: none;
 }
 
 .ganesh {

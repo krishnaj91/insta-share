@@ -11,7 +11,7 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
   margin: 1rem;
-  
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -27,8 +27,8 @@
   }
 
   .status-profile-pic {
-    height: 80px;
-    width: 80px;
+    height: var(--status-size);
+    width: var(--status-size);
     border-radius: 50%;
     border: 2px solid whitesmoke;
     overflow: hidden;
@@ -43,8 +43,6 @@
 }
 
 .profile-card-pic {
-  height: 50px;
-  width: 50px;
   background-size: cover;
   border-radius: 50%;
   background-position: center;
@@ -76,7 +74,7 @@
 
 // Define styles for the skeleton component
 .skeleton {
-  background-color: var(--themeColor); // Background color of the skeleton
+  background-color: var(--theme-text-color); // Background color of the skeleton
   border-radius: 4px; // Border radius for rounded corners
   animation: pulse 1.5s infinite ease-in-out; // Animation for the pulse effect
   width: 500px;
