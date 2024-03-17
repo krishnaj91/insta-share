@@ -41,7 +41,7 @@ const Home = () => {
     <MainLayout>
       <div className="flex align-items-center">
         <i
-          className="pi pi-angle-left text-4xl cursor-pointer  hidden sm:block"
+          className="pi pi-angle-left my-page-icon cursor-pointer  hidden sm:block"
           onClick={scrollLeft}
         />
         <div className="status-container" ref={containerRef}>
@@ -52,7 +52,7 @@ const Home = () => {
           ))}
         </div>
         <i
-          className="pi pi-angle-right text-4xl cursor-pointer  hidden sm:block"
+          className="pi pi-angle-right my-page-icon cursor-pointer  hidden sm:block"
           onClick={scrollRight}
         />
       </div>
@@ -68,8 +68,8 @@ const Home = () => {
                 <div className="font-semibold main-text">{item.username}</div>
               </div>
               <div>
-                <i className="pi pi-ellipsis-h md:text-2xl text-4xl pr-2 cursor-pointer md:block hidden" />
-                <i className="pi pi-ellipsis-v md:text-2xl text-4xl pr-2 cursor-pointer md:hidden block" />
+                <i className="pi pi-ellipsis-h my-page-icon pr-2 cursor-pointer md:block hidden" />
+                <i className="pi pi-ellipsis-v my-page-icon pr-2 cursor-pointer md:hidden block" />
               </div>
             </div>
             <div>
@@ -86,11 +86,11 @@ const Home = () => {
             </div>
             <div className="flex align-items-center justify-content-between m-3">
               <div className="flex gap-3">
-                <i className="pi pi-heart md:text-2xl text-4xl cursor-pointer" />
-                <i className="pi pi-comment md:text-2xl text-4xl cursor-pointer" />
-                <i className="pi pi-share-alt md:text-2xl text-4xl cursor-pointer" />
+                <i className="pi pi-heart my-page-icon cursor-pointer" />
+                <i className="pi pi-comment my-page-icon cursor-pointer" />
+                <i className="pi pi-share-alt my-page-icon cursor-pointer" />
               </div>
-              <i className="pi pi-bookmark md:text-2xl text-4xl pr-2 cursor-pointer" />
+              <i className="pi pi-bookmark my-page-icon pr-2 cursor-pointer" />
             </div>
             <div className="font-semibold	main-text mt-2 mx-3">
               {item.likeCount} likes

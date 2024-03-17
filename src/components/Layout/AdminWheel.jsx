@@ -28,6 +28,8 @@ const AdminWheel = () => {
     { name: "Pink", hexCode: "#FF5EB0" },
   ];
 
+  const bodyIcon = screenWidth >= 769 ? "26px" : "24px";
+
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -60,14 +62,25 @@ const AdminWheel = () => {
     root.style.setProperty("--status-size", "60px");
     const sidebarTextSize =
       screenWidth <= 768
-        ? "16px"
+        ? "20px"
         : screenWidth > 769 && screenWidth < 1024
         ? "18px"
         : "22px";
     root.style.setProperty("--sidebar-text", `calc(${sidebarTextSize} - 4px)`);
-    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} - 2px)`);
-    root.style.setProperty("--subheading-size", `calc(${sidebarTextSize} - 4px)`);
-    root.style.setProperty("--paragraph-size", `calc(${sidebarTextSize} - 8px)`);
+    root.style.setProperty(
+      "--main-font-size",
+      `calc(${sidebarTextSize} - 2px)`
+    );
+    root.style.setProperty(
+      "--subheading-size",
+      `calc(${sidebarTextSize} - 2px)`
+    );
+    root.style.setProperty(
+      "--paragraph-size",
+      `calc(${sidebarTextSize} - 6px)`
+    );
+    root.style.setProperty("--mobile-icon", "22px");
+    root.style.setProperty("--page-icon-size", `calc(${bodyIcon} - 4px)`);
     dispatch(primeReactSizes("small"));
     dispatch(homeProfilePicSize("40px"));
   };
@@ -77,14 +90,22 @@ const AdminWheel = () => {
     root.style.setProperty("--status-size", "70px");
     const sidebarTextSize =
       screenWidth <= 768
-        ? "16px"
+        ? "20px"
         : screenWidth > 769 && screenWidth < 1024
         ? "18px"
         : "22px";
     root.style.setProperty("--sidebar-text", sidebarTextSize);
-    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} + 2px)`);
+    root.style.setProperty(
+      "--main-font-size",
+      `calc(${sidebarTextSize} + 2px)`
+    );
     root.style.setProperty("--subheading-size", sidebarTextSize);
-    root.style.setProperty("--paragraph-size", `calc(${sidebarTextSize} - 4px)`);
+    root.style.setProperty(
+      "--paragraph-size",
+      `calc(${sidebarTextSize} - 4px)`
+    );
+    root.style.setProperty("--mobile-icon", "26px");
+    root.style.setProperty("--page-icon-size", bodyIcon);
     dispatch(primeReactSizes("normal"));
     dispatch(homeProfilePicSize("45px"));
   };
@@ -95,14 +116,22 @@ const AdminWheel = () => {
     root.style.setProperty("--status-size", "80px");
     const sidebarTextSize =
       screenWidth <= 768
-        ? "16px"
+        ? "20px"
         : screenWidth > 769 && screenWidth < 1024
         ? "18px"
         : "22px";
     root.style.setProperty("--sidebar-text", `calc(${sidebarTextSize} + 4px)`);
-    root.style.setProperty("--main-font-size", `calc(${sidebarTextSize} + 6px)`);
-    root.style.setProperty("--subheading-size", `calc(${sidebarTextSize} + 4px)`);
+    root.style.setProperty(
+      "--main-font-size",
+      `calc(${sidebarTextSize} + 6px)`
+    );
+    root.style.setProperty(
+      "--subheading-size",
+      `calc(${sidebarTextSize} + 4px)`
+    );
     root.style.setProperty("--paragraph-size", sidebarTextSize);
+    root.style.setProperty("--mobile-icon", "30px");
+    root.style.setProperty("--page-icon-size", `calc(${bodyIcon} + 4px)`);
     dispatch(primeReactSizes("large"));
     dispatch(homeProfilePicSize("50px"));
   };
@@ -117,6 +146,7 @@ const AdminWheel = () => {
         onHide={handleSidebarClose}
         position="right"
         header="Admin Control"
+        blockScroll
         className={
           isDark
             ? "surface-800 text-200  md:w-4 sm:w-6"

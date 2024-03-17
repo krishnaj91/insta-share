@@ -16,9 +16,7 @@ const Footer = () => {
           {FooterItems.map((item, index) => (
             <div key={index} className="border">
               <div onClick={() => navigate(item.path)}>
-                <i
-                  className={`${item.icon} text-3xl my-col font-bold cursor-pointer`}
-                />
+                <i className={`${item.icon} my-col font-bold cursor-pointer my-mobile-icon`} />
               </div>
             </div>
           ))}

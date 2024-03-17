@@ -12,6 +12,9 @@
   --subheading-size: 1.25rem; /* 20px */
   --paragraph-size: 1.0625rem; /* 17px */
   --sidebar-text: 24px;
+  --page-icon-size: 20px;
+
+  --mobile-icon: 26px;
 
   --status-size: 70px;
 }
@@ -23,6 +26,7 @@
     --subheading-size: 1.125rem; /* 18px */
     --paragraph-size: 14px; /* 16px */
     --sidebar-text: 16px;
+    --page-icon-size: 24px;
   }
 }
 
@@ -34,6 +38,7 @@
     --subheading-size: 1.125rem; /* 18px */
     --paragraph-size: 14px; /* 15px */
     --sidebar-text: 16px;
+    --page-icon-size: 24px;
   }
 }
 
@@ -45,6 +50,7 @@
     --subheading-size: 20px; /* 18px */
     --paragraph-size: 16px; /* 16px */
     --sidebar-text: 18px;
+    --page-icon-size: 26px;
   }
 }
 
@@ -56,6 +62,7 @@
     --subheading-size: 1.375rem; /* 22px */
     --paragraph-size: 18px; /* 19px */
     --sidebar-text: 22px;
+    --page-icon-size: 26px;
   }
 }
 
@@ -103,6 +110,14 @@
 .my-btn {
   background-color: var(--primaryColor);
   border: none;
+}
+
+.my-mobile-icon {
+  font-size: var(--mobile-icon);
+}
+
+.my-page-icon {
+  font-size: var(--page-icon-size);
 }
 
 .ganesh {

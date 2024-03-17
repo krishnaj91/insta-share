@@ -14,6 +14,97 @@ const Navbar = () => {
   const { isDark, collapse, size, postProfileSize } = useSelector(
     (state) => state.layout
   );
+  const currentPath = window.location.pathname;
+
+  const HomeNav = () => {
+    return (
+      <div className="flex justify-content-between align-items-center h-full px-3">
+        <div className="flex align-items-center">
+          <img
+            src={isDark ? LogoDark : LogoLight}
+            className="sidebar-logo cursor-pointer"
+            alt="logo"
+          />
+          <div className="font-semibold my-col main-text">Insta Share</div>
+        </div>
+        <div className="flex gap-4">
+          <i className="pi pi-bell my-mobile-icon my-col font-normal cursor-pointer" />
+          <i className="pi pi-comment my-mobile-icon my-col font-normal cursor-pointer" />
+        </div>
+      </div>
+    );
+  };
+
+  const SearchNav = () => {
+    return (
+      <div className="flex justify-content-between align-items-center h-full px-3">
+        <div className="flex align-items-center gap-5">
+          <img
+            src={isDark ? LogoDark : LogoLight}
+            className="sidebar-logo cursor-pointer"
+            alt="logo"
+          />
+          <div>
+            <span className="p-input-icon-left">
+              <i className="pi pi-search" />
+              <InputText
+                placeholder="Search"
+                className="p-inputtext-sm w-full"
+                size={size}
+                type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const CreatePostNav = () => {
+    return (
+      <div className="flex justify-content-between align-items-center h-full px-3">
+        <div className="flex align-items-center gap-2">
+          <img
+            src={isDark ? LogoDark : LogoLight}
+            className="sidebar-logo cursor-pointer"
+            alt="logo"
+          />
+          <div className="font-semibold my-col main-text">Create Post</div>
+        </div>
+      </div>
+    );
+  };
+
+  const ReelsNav = () => {
+    return (
+      <div className="flex justify-content-between align-items-center h-full px-3">
+        <div className="flex align-items-center gap-2">
+          <img
+            src={isDark ? LogoDark : LogoLight}
+            className="sidebar-logo cursor-pointer"
+            alt="logo"
+          />
+          <div className="font-semibold my-col main-text">Reels</div>
+        </div>
+        <div>
+          <i className="pi pi-globe my-mobile-icon" />
+        </div>
+      </div>
+    );
+  };
+
+  const ProfileNav = () => {
+    return (
+      <div className="flex justify-content-between align-items-center h-full border px-3">
+        <div className="main-text">Krishna Goutham</div>
+        <div className="flex gap-3">
+          <i className="pi pi-bell my-mobile-icon" />
+          <i className="pi pi-plus my-mobile-icon" />
+          <i className="pi pi-bars my-mobile-icon" />
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className={isDark ? "nav-dark" : "nav-light"}>
@@ -49,6 +140,7 @@ const Navbar = () => {
                   placeholder="Search"
                   className="p-inputtext-sm"
                   size={size}
+                  type="search"
                 />
               </span>
             </div>
@@ -68,20 +160,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="md:hidden block h-full">
-          <div className="flex justify-content-between align-items-center h-full px-3">
-            <div className="flex align-items-center">
-              <img
-                src={isDark ? LogoDark : LogoLight}
-                className="sidebar-logo cursor-pointer"
-                alt="logo"
-              />
-              <div className="font-semibold my-col text-3xl">Insta Share</div>
-            </div>
-            <div className="flex gap-4">
-              <i className="pi pi-bell text-3xl my-col font-normal cursor-pointer" />
-              <i className="pi pi-comment text-3xl my-col font-normal cursor-pointer" />
-            </div>
-          </div>
+          {currentPath === "/home" && HomeNav()}
+          {currentPath === "/search" && SearchNav()}
+          {currentPath === "/create" && CreatePostNav()}
+          {currentPath === "/reels" && ReelsNav()}
+          {currentPath === "/profile" && ProfileNav()}
         </div>
       </div>
     </div>
