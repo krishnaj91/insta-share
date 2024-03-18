@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Test from "../pages/Test/Test";
 import Info from "../pages/Test/Info";
 import Login from "../pages/auth/Login";
-import Home from "../pages/Home";
 import TestColors from "../pages/Test/TestColors";
 import Search from "../pages/Search";
 import Explore from "../pages/Explore";
@@ -13,6 +12,7 @@ import Notifications from "../pages/Notifications";
 import Create from "../pages/Create";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
+import Home from "../pages/Home/Home";
 
 const Router = () => {
   return (

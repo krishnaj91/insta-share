@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const HomeNav = () => {
     return (
-      <div className="flex justify-content-between align-items-center h-full px-3">
+      <div className="flex justify-content-between align-items-center h-full pr-3">
         <div className="flex align-items-center">
           <img
             src={isDark ? LogoDark : LogoLight}
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   const SearchNav = () => {
     return (
-      <div className="flex justify-content-between align-items-center h-full px-3">
+      <div className="flex justify-content-between align-items-center h-full pr-3">
         <div className="flex align-items-center gap-5">
           <img
             src={isDark ? LogoDark : LogoLight}
@@ -62,7 +62,7 @@ const Navbar = () => {
 
   const CreatePostNav = () => {
     return (
-      <div className="flex justify-content-between align-items-center h-full px-3">
+      <div className="flex justify-content-between align-items-center h-full pr-3">
         <div className="flex align-items-center gap-2">
           <img
             src={isDark ? LogoDark : LogoLight}
@@ -77,7 +77,7 @@ const Navbar = () => {
 
   const ReelsNav = () => {
     return (
-      <div className="flex justify-content-between align-items-center h-full px-3">
+      <div className="flex justify-content-between align-items-center h-full pr-3">
         <div className="flex align-items-center gap-2">
           <img
             src={isDark ? LogoDark : LogoLight}
@@ -95,7 +95,7 @@ const Navbar = () => {
 
   const ProfileNav = () => {
     return (
-      <div className="flex justify-content-between align-items-center h-full border px-3">
+      <div className="flex justify-content-between align-items-center h-full border pl-2 pr-3">
         <div className="main-text">Krishna Goutham</div>
         <div className="flex gap-3">
           <i className="pi pi-bell my-mobile-icon" />
