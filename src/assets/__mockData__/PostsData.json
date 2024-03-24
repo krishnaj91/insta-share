@@ -11,7 +11,8 @@
         "totalComments": 20,
         "description": "Enjoying the beauty of nature.",
         "private": false,
-        "post_time": "2024-03-17T12:00:00Z"
+        "post_time": "2024-03-17T12:00:00Z",
+        "liked": true
     },
     {
         "user_id": "h6GtR1pQs",
@@ -25,7 +26,8 @@
         "totalComments": 15,
         "description": "Capturing the breathtaking views.",
         "private": true,
-        "post_time": "2024-03-17T12:15:00Z"
+        "post_time": "2024-03-17T12:15:00Z",
+        "liked": false
     },
     {
         "user_id": "u9PwQ5sEr",
@@ -39,7 +41,8 @@
         "totalComments": 25,
         "description": "Lost in the tranquility of the woods.",
         "private": false,
-        "post_time": "2024-03-17T12:30:00Z"
+        "post_time": "2024-03-17T12:30:00Z",
+        "liked": true
     },
     {
         "user_id": "k2NfJ3dRp",
@@ -53,7 +56,8 @@
         "totalComments": 30,
         "description": "Adventuring through majestic peaks.",
         "private": false,
-        "post_time": "2024-03-17T12:45:00Z"
+        "post_time": "2024-03-17T12:45:00Z",
+        "liked": false
     },
     {
         "user_id": "z8KqV1oNw",
@@ -67,7 +71,8 @@
         "totalComments": 18,
         "description": "Mesmerized by the cascade of water.",
         "private": true,
-        "post_time": "2024-03-17T13:00:00Z"
+        "post_time": "2024-03-17T13:00:00Z",
+        "liked": false
     },
     {
         "user_id": "e7HmX4uGq",
@@ -81,7 +86,8 @@
         "totalComments": 22,
         "description": "Relaxing by the sandy shores.",
         "private": false,
-        "post_time": "2024-03-17T13:15:00Z"
+        "post_time": "2024-03-17T13:15:00Z",
+        "liked": true
     },
     {
         "user_id": "f4TlS9pWq",
@@ -95,7 +101,8 @@
         "totalComments": 28,
         "description": "Chasing the last rays of sunlight.",
         "private": false,
-        "post_time": "2024-03-17T13:30:00Z"
+        "post_time": "2024-03-17T13:30:00Z",
+        "liked": true
     },
     {
         "user_id": "m3ZpQ9wGk",
@@ -109,7 +116,8 @@
         "totalComments": 12,
         "description": "Witnessing the birth of a new day.",
         "private": true,
-        "post_time": "2024-03-17T13:45:00Z"
+        "post_time": "2024-03-17T13:45:00Z",
+        "liked": false
     },
     {
         "user_id": "i9OpW3jRs",
@@ -123,7 +131,8 @@
         "totalComments": 35,
         "description": "Finding peace among the tall trees.",
         "private": false,
-        "post_time": "2024-03-17T14:00:00Z"
+        "post_time": "2024-03-17T14:00:00Z",
+        "liked": true
     },
     {
         "user_id": "n2UqA5rPw",
@@ -137,7 +146,8 @@
         "totalComments": 10,
         "description": "Admiring the beauty of blooming flowers.",
         "private": false,
-        "post_time": "2024-03-17T14:15:00Z"
+        "post_time": "2024-03-17T14:15:00Z",
+        "liked": true
     },
     {
         "user_id": "s7HjK4dFs",
@@ -151,7 +161,8 @@
         "totalComments": 16,
         "description": "Watching the clouds drift by.",
         "private": false,
-        "post_time": "2024-03-17T14:30:00Z"
+        "post_time": "2024-03-17T14:30:00Z",
+        "liked": true
     },
     {
         "user_id": "l2RtQ9sZp",
@@ -165,7 +176,8 @@
         "totalComments": 27,
         "description": "Marveling at the beauty of birds in flight.",
         "private": true,
-        "post_time": "2024-03-17T14:45:00Z"
+        "post_time": "2024-03-17T14:45:00Z",
+        "liked": true
     },
     {
         "user_id": "q8IuW3pTr",
@@ -179,7 +191,8 @@
         "totalComments": 19,
         "description": "Gazing up at the starry night sky.",
         "private": false,
-        "post_time": "2024-03-17T15:00:00Z"
+        "post_time": "2024-03-17T15:00:00Z",
+        "liked": false
     },
     {
         "user_id": "w3ErT8jPq",
@@ -193,7 +206,8 @@
         "totalComments": 23,
         "description": "Exploring the bustling streets of the city.",
         "private": true,
-        "post_time": "2024-03-17T15:15:00Z"
+        "post_time": "2024-03-17T15:15:00Z",
+        "liked": false
     },
     {
         "user_id": "a9QsR4fHj",
@@ -207,7 +221,8 @@
         "totalComments": 14,
         "description": "Playing in the freshly fallen snow.",
         "private": false,
-        "post_time": "2024-03-17T15:30:00Z"
+        "post_time": "2024-03-17T15:30:00Z",
+        "liked": true
     },
     {
         "user_id": "f6YrE2hTk",
@@ -221,7 +236,8 @@
         "totalComments": 31,
         "description": "Admiring the colorful bursts of fireworks.",
         "private": false,
-        "post_time": "2024-03-17T15:45:00Z"
+        "post_time": "2024-03-17T15:45:00Z",
+        "liked": false
     },
     {
         "user_id": "z4FyG7jEm",
@@ -235,7 +251,8 @@
         "totalComments": 25,
         "description": "Listening to the soothing sound of rain.",
         "private": true,
-        "post_time": "2024-03-17T16:00:00Z"
+        "post_time": "2024-03-17T16:00:00Z",
+        "liked": true
     },
     {
         "user_id": "x8RwT3uIq",
@@ -249,7 +266,8 @@
         "totalComments": 29,
         "description": "Admiring the moonlit night.",
         "private": false,
-        "post_time": "2024-03-17T16:15:00Z"
+        "post_time": "2024-03-17T16:15:00Z",
+        "liked": true
     },
     {
         "user_id": "m5PtW9rKs",
@@ -263,7 +281,8 @@
         "totalComments": 18,
         "description": "Exploring the vastness of the desert.",
         "private": true,
-        "post_time": "2024-03-17T16:30:00Z"
+        "post_time": "2024-03-17T16:30:00Z",
+        "liked": false
     },
     {
         "user_id": "i2OsA4wEr",
@@ -277,7 +296,8 @@
         "totalComments": 24,
         "description": "Chasing rainbows after the rain.",
         "private": false,
-        "post_time": "2024-03-17T16:45:00Z"
+        "post_time": "2024-03-17T16:45:00Z",
+        "liked": true
     },
     {
         "user_id": "d9RtF7wYp",
@@ -291,7 +311,8 @@
         "totalComments": 12,
         "description": "Enjoying the peaceful countryside.",
         "private": true,
-        "post_time": "2024-03-17T17:00:00Z"
+        "post_time": "2024-03-17T17:00:00Z",
+        "liked": true
     },
     {
         "user_id": "o8TqS6uJi",
@@ -305,7 +326,8 @@
         "totalComments": 17,
         "description": "Admiring the beauty of architectural marvels.",
         "private": false,
-        "post_time": "2024-03-17T17:15:00Z"
+        "post_time": "2024-03-17T17:15:00Z",
+        "liked": false
     },
     {
         "user_id": "w2EnP5sJr",
@@ -319,7 +341,8 @@
         "totalComments": 22,
         "description": "Exploring the depths of the ocean.",
         "private": true,
-        "post_time": "2024-03-17T17:30:00Z"
+        "post_time": "2024-03-17T17:30:00Z",
+        "liked": false
     },
     {
         "user_id": "p5QtR8fWs",
@@ -333,7 +356,8 @@
         "totalComments": 14,
         "description": "Cuddling with adorable pets.",
         "private": false,
-        "post_time": "2024-03-17T17:45:00Z"
+        "post_time": "2024-03-17T17:45:00Z",
+        "liked": true
     },
     {
         "user_id": "t6JyH9kLs",
@@ -347,7 +371,8 @@
         "totalComments": 20,
         "description": "Embarking on a journey down the open road.",
         "private": true,
-        "post_time": "2024-03-17T18:00:00Z"
+        "post_time": "2024-03-17T18:00:00Z",
+        "liked": true
     },
     {
         "user_id": "f7YuT2jRm",
@@ -361,7 +386,8 @@
         "totalComments": 18,
         "description": "Exploring the mysteries of the night.",
         "private": false,
-        "post_time": "2024-03-17T18:15:00Z"
+        "post_time": "2024-03-17T18:15:00Z",
+        "liked": true
     },
     {
         "user_id": "g2FtW4jAm",
@@ -375,7 +401,8 @@
         "totalComments": 25,
         "description": "Getting lost in the pages of a good book.",
         "private": true,
-        "post_time": "2024-03-17T18:30:00Z"
+        "post_time": "2024-03-17T18:30:00Z",
+        "liked": false
     },
     {
         "user_id": "o9PsQ5rNm",
@@ -389,7 +416,8 @@
         "totalComments": 16,
         "description": "Listening to the soulful melodies of music.",
         "private": false,
-        "post_time": "2024-03-17T18:45:00Z"
+        "post_time": "2024-03-17T18:45:00Z",
+        "liked": false
     },
     {
         "user_id": "t3RuQ8sJw",
@@ -403,7 +431,8 @@
         "totalComments": 23,
         "description": "Strolling through vibrant garden paths.",
         "private": false,
-        "post_time": "2024-03-17T19:00:00Z"
+        "post_time": "2024-03-17T19:00:00Z",
+        "liked": true
     },
     {
         "user_id": "i7HuM9kWo",
@@ -417,6 +446,7 @@
         "totalComments": 19,
         "description": "Embracing the charm of vintage aesthetics.",
         "private": true,
-        "post_time": "2024-03-17T19:15:00Z"
+        "post_time": "2024-03-17T19:15:00Z",
+        "liked": true
     }
 ]

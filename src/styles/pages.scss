@@ -92,6 +92,32 @@
   }
 }
 
+/* mobile overlay */
+
+.comments-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.8);
+  z-index: 1;
+}
+
+.comments-mobile-content {
+  width: 100vw;
+  height: 70vh;
+  position: fixed;
+  bottom: 0;
+}
+
+.comments-mobile-content-full {
+  width: 100vw;
+  height: 95vh;
+  position: fixed;
+  bottom: 0;
+}
+
 /* Modal.css */
 .modal-overlay {
   position: fixed;
@@ -146,7 +172,6 @@
 }
 
 .comment-dark{
-  background: black;
   .comment-head-bg{
     background-color: #181717;
   }

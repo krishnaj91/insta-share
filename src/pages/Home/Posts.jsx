@@ -6,10 +6,12 @@ import { useDispatch, useSelector } from "react-redux";
 import PostProfilepic from "../../components/PageComponents/PostProfilepic";
 import Comments from "./Comments";
 import { fetchComments } from "../../redux/actions/homePageActions";
+import MobileComments from "./MobileComments";
 
 const Posts = () => {
   const dispatch = useDispatch();
   const { size, postProfileSize } = useSelector((state) => state.layout);
+  const [postsData, setPostsData] = useState(PostsData);
   const [loading, setLoading] = useState(true);
   const [commentsVisible, setCommentsVisible] = useState(false);
   const [selectedComment, setSelectedComment] = useState([]);
@@ -21,9 +23,9 @@ const Posts = () => {
   };
 
   const handleCommentsOpen = (item) => {
-    setCommentsVisible(true);
     dispatch(fetchComments(item.user_id));
     setSelectedComment(item);
+    setCommentsVisible(true);
   };
 
   const handleCommentsClose = () => {
@@ -31,10 +33,20 @@ const Posts = () => {
     setSelectedComment([]);
   };
 
+  const handleLike = (item) => {
+    const updatedData = postsData.map((post) => {
+      if (post.post_id === item.post_id) {
+        return { ...post, liked: !post.liked };
+      }
+      return post;
+    });
+    setPostsData(updatedData);
+  };
+
   return (
     <div>
       <div className="flex flex-column align-items-center justify-content-center gap-4 mb-5">
-        {PostsData.map((item) => (
+        {postsData.map((item) => (
           <div
             className="post-card border-bottom-1 border-200"
             key={item.post_id}
@@ -66,7 +78,14 @@ const Posts = () => {
             </div>
             <div className="flex align-items-center justify-content-between m-3">
               <div className="flex gap-3">
-                <i className="pi pi-heart my-page-icon cursor-pointer" />
+                <i
+                  className={
+                    item.liked
+                      ? "pi pi-heart-fill my-page-icon cursor-pointer text-red-500"
+                      : "pi pi-heart my-page-icon cursor-pointer"
+                  }
+                  onClick={() => handleLike(item)}
+                />
                 <i
                   className="pi pi-comment my-page-icon cursor-pointer"
                   onClick={() => handleCommentsOpen(item)}
@@ -102,15 +121,22 @@ const Posts = () => {
           </div>
         ))}
       </div>
+
       <div className="hide-mobile">
         <Comments
           visible={commentsVisible}
-          setVisible={setCommentsVisible}
           onHide={handleCommentsClose}
           userData={selectedComment}
         />
       </div>
-      
+
+      <div className="visible-mobile">
+        <MobileComments
+          visible={commentsVisible}
+          onHide={handleCommentsClose}
+          userData={selectedComment}
+        />
+      </div>
     </div>
   );
 };

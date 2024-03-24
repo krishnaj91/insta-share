@@ -5,7 +5,7 @@ import PostProfilepic from "../../components/PageComponents/PostProfilepic";
 
 const Comments = ({ visible, onHide, userData }) => {
   const commentsData = useSelector((state) => state.home.commentsData);
-  const { size, isDark } = useSelector((state) => state.layout);
+  const { isDark } = useSelector((state) => state.layout);
 
   return (
     <div>
