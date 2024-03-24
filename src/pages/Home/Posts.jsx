@@ -7,9 +7,11 @@ import PostProfilepic from "../../components/PageComponents/PostProfilepic";
 import Comments from "./Comments";
 import { fetchComments } from "../../redux/actions/homePageActions";
 import MobileComments from "./MobileComments";
+import { useNavigate } from "react-router-dom";
 
 const Posts = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { size, postProfileSize } = useSelector((state) => state.layout);
   const [postsData, setPostsData] = useState(PostsData);
   const [loading, setLoading] = useState(true);
@@ -52,12 +54,17 @@ const Posts = () => {
             key={item.post_id}
           >
             <div className="flex align-items-center justify-content-between m-3">
-              <div className="flex align-items-center gap-3">
+              <div
+                className="flex align-items-center gap-3"
+                onClick={() => navigate("/user-details")}
+              >
                 <PostProfilepic
                   imageUrl={item.userpic}
                   mySize={postProfileSize}
                 />
-                <div className="font-semibold main-text">{item.username}</div>
+                <div className="font-semibold main-text cursor-pointer">
+                  {item.username}
+                </div>
               </div>
               <div>
                 <i className="pi pi-ellipsis-h my-page-icon pr-2 cursor-pointer md:block hidden" />

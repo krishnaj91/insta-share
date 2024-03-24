@@ -2,10 +2,12 @@ import React from "react";
 import { useSelector } from "react-redux";
 import CustomDialog from "../../components/Views/Dialog";
 import PostProfilepic from "../../components/PageComponents/PostProfilepic";
+import { useNavigate } from "react-router-dom";
 
 const Comments = ({ visible, onHide, userData }) => {
   const commentsData = useSelector((state) => state.home.commentsData);
   const { isDark } = useSelector((state) => state.layout);
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -17,8 +19,17 @@ const Comments = ({ visible, onHide, userData }) => {
           <div className={isDark ? "comment-dark" : "comment-light"}>
             <div className="comment-head-height comment-head-bg flex justify-content-between align-items-center px-3">
               <div className="h-full flex align-items-center gap-3">
-                <PostProfilepic imageUrl={userData.userpic} mySize="45px" />
-                <div className="font-semibold">{userData.username}</div>
+                <PostProfilepic
+                  imageUrl={userData.userpic}
+                  mySize="45px"
+                  onClick={() => navigate("/user-details")}
+                />
+                <div
+                  className="font-semibold"
+                  onClick={() => navigate("/user-details")}
+                >
+                  {userData.username}
+                </div>
               </div>
               <div>
                 <i className="pi pi-ellipsis-h text-xl pr-2 cursor-pointer" />
@@ -30,12 +41,18 @@ const Comments = ({ visible, onHide, userData }) => {
                   <div key={items.user_id}>
                     <div className="mb-3">
                       <div className="flex align-items-start gap-3">
-                       
-                        <PostProfilepic imageUrl={items.userpic} mySize="45px" />
+                        <PostProfilepic
+                          imageUrl={items.userpic}
+                          mySize="45px"
+                        />
                         <div>
-                          <div className="text-xl cursor-pointer">{items.username}</div>
+                          <div className="text-xl cursor-pointer">
+                            {items.username}
+                          </div>
                           <div className="text-sm">{items.comment}</div>
-                          <div className="text-xs text-500">{items.commented_at}</div>
+                          <div className="text-xs text-500">
+                            {items.commented_at}
+                          </div>
                         </div>
                       </div>
                     </div>

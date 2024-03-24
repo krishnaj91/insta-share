@@ -10,9 +10,10 @@ import Reels from "../pages/Reels";
 import Messages from "../pages/Messages";
 import Notifications from "../pages/Notifications";
 import Create from "../pages/Create";
-import Profile from "../pages/Profile";
+// import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
 import Home from "../pages/Home/Home";
+import CompleteProfile from "../pages/CompleteProfile";
 
 const Router = () => {
   return (
@@ -29,8 +30,9 @@ const Router = () => {
         <Route path="/messages" element={<Messages />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<CompleteProfile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/user-details" element={<CompleteProfile />} />
       </Routes>
     </div>
   );

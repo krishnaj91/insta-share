@@ -46,17 +46,17 @@ const MobileComments = ({ visible, onHide, userData }) => {
               </div>
             ))}
         </div>
-        <div className="fixed bottom-0 w-12 p-3 comment-footer-bg">
+        <div className="fixed bottom-0 w-12 px-3 py-2 comment-footer-bg">
           <div className="flex align-items-center gap-3">
-            <PostProfilepic imageUrl={userData.userpic} mySize="50px" />
+            <PostProfilepic imageUrl={userData.userpic} mySize="40px" />
             <input
               placeholder="Add a comment ..."
               type="text"
               className="input-comment w-9 text-2xl"
               autoFocus
             />
-            <div className="flex align-items-center justify-content-center border-circle p-2 bg-primary">
-              <i className="pi pi-send cursor-pointer text-2xl p-1" />
+            <div className="flex align-items-center justify-content-center border-circle p-1 bg-primary">
+              <i className="pi pi-send cursor-pointer text-xl p-1" />
             </div>
           </div>
         </div>
