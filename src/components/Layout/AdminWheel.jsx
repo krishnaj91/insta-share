@@ -16,6 +16,8 @@ const AdminWheel = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const colors = [
+    // { name: "White", hexCode: "#fff" },
+    // { name: "Black", hexCode: "#000000" },
     { name: "Red", hexCode: "#FF5E5E" },
     { name: "Blue", hexCode: "#5E97FF" },
     { name: "Green", hexCode: "#5EFFA2" },
@@ -153,21 +155,20 @@ const AdminWheel = () => {
             : " surface-200 text-800 md:w-4 sm:w-6"
         }
       >
-        <h1>{screenWidth}</h1>
         <div className="mb-3">
           <div className="text-3xl font-bold mb-2">Sidebar</div>
           <div className="flex gap-4">
             <Button
               onClick={() => dispatch(collapseSidebar(false))}
               size={size}
-              className="my-btn"
+              className="my-btn text-500"
             >
               ON
             </Button>
             <Button
               onClick={() => dispatch(collapseSidebar(true))}
               size={size}
-              className="my-btn"
+              className="my-btn text-500"
             >
               OFF
             </Button>
@@ -180,34 +181,17 @@ const AdminWheel = () => {
             <Button
               onClick={() => dispatch(switchTheme(false))}
               size={size}
-              className="my-btn"
+              className="my-btn text-500"
             >
               LIGHT
             </Button>
             <Button
               onClick={() => dispatch(switchTheme(true))}
               size={size}
-              className="my-btn"
+              className="my-btn text-500"
             >
               DARK
             </Button>
-          </div>
-        </div>
-
-        <div className="mb-3">
-          <div className="text-3xl font-bold mb-2">Color</div>
-          <div className="flex flex-wrap gap-3">
-            {colors.map((color, index) => (
-              <Button
-                key={index}
-                onClick={() => handleColor(color.hexCode)}
-                style={{ background: color.hexCode }}
-                className="border-none"
-                size={size}
-              >
-                {color.name}
-              </Button>
-            ))}
           </div>
         </div>
 
@@ -218,20 +202,57 @@ const AdminWheel = () => {
               label="SMALL"
               size={size}
               onClick={handleSmallText}
-              className="my-btn"
+              className="my-btn text-500"
             />
             <Button
               label="NORMAL"
               size={size}
               onClick={handleNormalText}
-              className="my-btn"
+              className="my-btn text-500"
             />
             <Button
               label="LARGE"
               size={size}
               onClick={handleLargeText}
-              className="my-btn"
+              className="my-btn text-500"
             />
+          </div>
+        </div>
+
+        <div className="mb-3">
+          <div className="text-3xl font-bold mb-2">Color</div>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              label="White"
+              onClick={() => handleColor("#fff")}
+              style={{ background: "#fff" }}
+              className="border-none text-900"
+              size={size}
+              disabled={!isDark}
+            />
+            <Button
+              label="Black"
+              onClick={() => handleColor("#000000")}
+              style={{ background: "#000000" }}
+              className="border-none"
+              size={size}
+              disabled={isDark}
+            />
+            {colors.map((color, index) => (
+              <Button
+                key={index}
+                onClick={() => handleColor(color.hexCode)}
+                style={{ background: color.hexCode }}
+                className={
+                  color.name === "White"
+                    ? "border-none text-900"
+                    : "border-none"
+                }
+                size={size}
+              >
+                {color.name}
+              </Button>
+            ))}
           </div>
         </div>
       </Sidebar>

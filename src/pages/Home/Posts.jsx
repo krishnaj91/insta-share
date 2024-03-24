@@ -102,12 +102,15 @@ const Posts = () => {
           </div>
         ))}
       </div>
-      <Comments
-        visible={commentsVisible}
-        setVisible={setCommentsVisible}
-        onHide={handleCommentsClose}
-        userData={selectedComment}
-      />
+      <div className="hide-mobile">
+        <Comments
+          visible={commentsVisible}
+          setVisible={setCommentsVisible}
+          onHide={handleCommentsClose}
+          userData={selectedComment}
+        />
+      </div>
+      
     </div>
   );
 };

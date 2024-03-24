@@ -20,7 +20,7 @@ const MainLayout = ({ children }) => {
  
   useEffect(() => {
     const root = document.documentElement;
-    // root.style.setProperty('--primaryColor', isDark ? '#ffffff' : '#000000');
+    root.style.setProperty('--primaryColor', isDark ? '#ffffff' : '#000000');
     root.style.setProperty('--theme-text-color', isDark ? "#ffffff" : "#000000");
     root.style.setProperty('--theme-text-secondary-color', isDark ? "#F5F5F5" : "#222222");
   }, [isDark]);

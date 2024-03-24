@@ -4,7 +4,6 @@
 }
 
 .status-container {
-  // width: 600px;
   overflow-x: scroll;
   display: flex;
   gap: 0.5rem;
@@ -93,6 +92,72 @@
   }
 }
 
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  border-radius: 5px;
+  width: 70vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.comment-img{
+  width: 30vw;
+}
+
+.comment-head-height{
+  height: 10%;
+}
+
+.comment-body-height{
+  overflow-y: auto;
+  height: 70%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.comment-footer-height{
+  height: 20%;
+}
+
+.comment-light{
+  .comment-head-bg{
+    background-color: #e4e0e0;
+  }
+  .comment-body-bg{
+    background-color: #fff;
+  }
+  .comment-footer-bg{
+    background-color: #e4e0e0;
+  }
+}
+
+.comment-dark{
+  background: black;
+  .comment-head-bg{
+    background-color: #181717;
+  }
+  .comment-body-bg{
+    background-color: #000000;
+  }
+  .comment-footer-bg{
+    background-color: #181717;
+  }
+}
+
 /* Media query for mobile devices */
 @media only screen and (max-width: 766px) {
   .post-img {
@@ -106,5 +171,13 @@
   }
   .skeleton {
     width: 100%;
+  }
+}
+
+/* Media queries for medium devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .modal-content {
+    width: 80vw;
+    height: 50vh;
   }
 }
