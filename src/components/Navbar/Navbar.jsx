@@ -144,18 +144,19 @@ const Navbar = () => {
                 />
               </span>
             </div>
-            <div>
-              <InputSwitch
-                checked={isDark}
-                onChange={() => dispatch(switchTheme(!isDark))}
-                pt={{
-                  slider: ({ props }) => ({
-                    className: props.checked ? "surface-300" : "surface-900",
-                  }),
-                }}
-                severity="help"
-                size={size}
-              />
+            <div className="mr-1">
+              {isDark && (
+                <i
+                  className="pi pi-sun cursor-pointer sidebar-text border-circle p-2 sun"
+                  onClick={() => dispatch(switchTheme(false))}
+                />
+              )}
+              {!isDark && (
+                <i
+                  className="pi pi-moon cursor-pointer sidebar-text border-circle p-2 moon"
+                  onClick={() => dispatch(switchTheme(true))}
+                />
+              )}
             </div>
           </div>
         </div>

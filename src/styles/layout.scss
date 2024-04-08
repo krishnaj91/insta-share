@@ -50,6 +50,13 @@
   background: #1a1a1a;
 }
 
+.sun:hover{
+  background-color: black;
+}
+
+.moon:hover{
+  background-color: white;
+}
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   .w-20 {

@@ -1,0 +1,23 @@
+.reels-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.reel {
+  min-height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
+  max-width: 100vw;
+  background-color: transparent;
+  border-bottom: 1px solid red;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .reel {
+    min-height: calc(100vh - 130px);
+    max-height: calc(100vh - 130px);
+  }
+}
